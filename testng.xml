@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Pramod Dutta/RestAssured/src/test/java/RestfulBooker/CRUD/GET/NonBDDStyleGETTestNG.java">
+
+        <classes><class name="RestfulBooker.CRUD.GET.NonBDDStyleGETTestNG">
+            <methods><include name="testGetAllBookingNegative"/>
+                     <include name="testGetAllBookingPositive"/>
+                     <include name="testGetAllBookingNegative1"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+
+        name="C:/Pramod Dutta/RestAssured/src/test/java/RestfulBooker/CRUD/GET/NonBDDStylePOSTToken.java">
+
+        <classes><class name="RestfulBooker.CRUD.POST.NonBDDStylePOSTToken">
+            <methods><include name="testNONBDDStylePOSTPositive"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" thread-count="2"
+              name="C:/Pramod Dutta/RestAssured/src/test/java/RestfulBooker/CRUD/GET/BDDStylePOSTToken.java">
+
+        <classes><class name="RestfulBooker.CRUD.POST.BDDStylePOSTToken">
+            <methods><include name="BDDStylePOSTPositive"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
