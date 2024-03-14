@@ -51,7 +51,7 @@ public class BDDPatch {
 
         requestSpecification = RestAssured.given();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com/");
-        requestSpecification.basePath("booking/2673");
+        requestSpecification.basePath("booking/500");
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.cookie(token,token);
         requestSpecification.body(payloadPatch).log().all();

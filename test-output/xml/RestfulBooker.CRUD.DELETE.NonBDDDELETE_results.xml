@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.272">
+    <properties></properties>
+
+
+
+            <testcase
+                name="Test"
+                time="5.272"
+                classname="RestfulBooker.CRUD.DELETE.NonBDDDELETE">
+            </testcase>
+</testsuite>

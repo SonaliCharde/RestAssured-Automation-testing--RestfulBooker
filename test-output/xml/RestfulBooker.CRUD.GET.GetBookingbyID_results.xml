@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.916">
+    <properties></properties>
+
+
+
+            <testcase
+                name="ByID"
+                time="4.916"
+                classname="RestfulBooker.CRUD.GET.GetBookingbyID">
+            </testcase>
+</testsuite>

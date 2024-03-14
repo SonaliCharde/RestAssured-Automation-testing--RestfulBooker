@@ -3,6 +3,8 @@ package RestfulBooker.CRUD.GET;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.Matcher;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 
 public class NonBDDStyleGET {
     public static void main(String[] args) {
@@ -21,9 +23,11 @@ public class NonBDDStyleGET {
 
         RequestSpecification r2 = RestAssured.given();
         r2.basePath("https://restful-booker.herokuapp.com");
-        r2.basePath("/booking/562");
+        r2.basePath("/booking/815");
         r2.when().log().all().get();
         r2.then().log().all().statusCode(200);
+
+
 
         // Testing Framework -> Allow us to execute the Test case
         // 1 main -> it will execute all the testcase that we have mentioned
